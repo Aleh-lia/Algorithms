@@ -11,7 +11,7 @@ public class hw_3 {
             if (i == 0) {
                 list.head = node;
             } else {
-                list.head.append(node);
+                list.head.add(node);
             }
             list.tail = node;
         }
@@ -65,12 +65,12 @@ public class hw_3 {
         public Node(int data) {
             this.data = data;
         }
-        public void append(Node node) {
+        public void add(Node node) {
             if (this.next == null) {
                 this.next = node;
                 node.previous = this;
             } else {
-                this.next.append(node);
+                this.next.add(node);
             }
         }
 
